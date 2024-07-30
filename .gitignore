@@ -1,3 +1,11 @@
 
 .env
 .venv
+
+# PyCharm files
+.idea/*.iml
+.idea/*.iws
+.idea/usage.statistics.xml
+.idea/workspace.xml
+.idea/modules.xml
+.idea/libraries/*.xml
