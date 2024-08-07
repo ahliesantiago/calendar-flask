@@ -29,19 +29,10 @@ def create_app(test_config=None):
     def index():
         return render_template("index.html", pageTitle="Dashboard", pageCss="homeStyle")
 
-    @app.route('/account')
-    def account():
-        return render_template("auth.html", pageTitle="Register", pageCss="authStyle")
-
-    @app.route('/register', methods=["POST"])
-    def register():
-        if not request.form.get("firstName"):
-            return "FFFFU"
-        # if not request.form.get("password") === request.form.get("confirmPassword"):
-        #     return "Passwords do not match"
-        return redirect("/")
-
     from . import db
     db.init_app(app)
+
+    from . import auth
+    app.register_blueprint(auth.bp)
 
     return app

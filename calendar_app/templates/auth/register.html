@@ -14,12 +14,12 @@
                 <td><input required type="text" id="lastName" name="lastName" autocomplete="off"></td>
             </tr>
             <tr>
-                <td><label for="email">Email address:</label></td>
-                <td><input required type="text" id="email" name="email" autocomplete="off"></td>
-            </tr>
-            <tr>
                 <td><label for="birthdate">Birth date:</label></td>
                 <td><input required type="date" id="birthdate" name="birthdate"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email address:</label></td>
+                <td><input required type="text" id="email" name="email" autocomplete="off"></td>
             </tr>
             <tr>
                 <td><label for="password">Password:</label></td>
@@ -32,23 +32,5 @@
         </table>
         <button type="submit">Register</button>
     </form>
-
-    <!--
-    <h1>Log in</h1>
-    <form action="/login" method="post">
-        <table>
-            <tr>
-                <td><label for="email">Email address:</label></td>
-                <td><input required type="text" id="email" name="email" autocomplete="off"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password:</label></td>
-                <td><input required type="password" id="password" name="password"></td>
-            </tr>
-        </table>
-        <button type="submit">Sign in</button>
-    </form>
-    <a href="/reset">Forgot password?</a>
-    -->
 
 {% endblock %}
