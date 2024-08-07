@@ -1,0 +1,14 @@
+div#sections{
+    display: flex;
+}
+div#leftPane, div#rightPane{
+    height: 100vh;
+    width: 50%;
+}
+div.boxes{
+    border: 1px solid black;
+    width: 85%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}

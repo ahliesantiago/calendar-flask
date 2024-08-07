@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+body{
+    display: flex;
+}
+nav{
+    background-color: #809bce;
+    color: white;
+    padding: 10px;
+    width: 8%;
+    height: 100vh;
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+main{
+    padding: 10px;
+    width: 85%;
+}

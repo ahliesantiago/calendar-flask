@@ -1,0 +1,10 @@
+/** Styling for the auth / register page **/
+
+form{
+    #birthdate{
+        min-width: 180px;
+    }
+    button{
+        padding: 5px;
+    }
+}
